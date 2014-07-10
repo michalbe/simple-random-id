@@ -21,3 +21,7 @@ assert.equal(generate('JCZC.7UP').length, 10);
 assert.equal(generate({
   'MlodybeTomal': 'Najlepszy rap z Jelonek'
 }).length, 10);
+
+// Called with array instead of number
+// Argument should be ignored
+assert.equal(generate([3,2,1,6,7]).length, 10);
