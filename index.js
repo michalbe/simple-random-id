@@ -1,7 +1,16 @@
 var generate = function(length) {
-  length = length || 10;
+  length = Math.abs(length) || 10;
   if (length <= 10) {
     return generateTen().substr(0, length);
+  } else {
+    var tens = ~~(length/10)+1;
+    var output = '';
+    console.log(tens);
+    while (tens--) {
+      console.log(tens);
+      output += generateTen();
+    }
+    return output.substr(0, length);
   }
 }
 
@@ -15,3 +24,5 @@ var generateTen = function() {
 
 console.log(generate(3));
 console.log(generate());
+console.log(generate(-5));
+console.log(generate(21));
