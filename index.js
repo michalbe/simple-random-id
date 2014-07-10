@@ -1,4 +1,5 @@
-var generate = function(length){
+var generate = function(length) {
+  length = length || 10;
   if (length <= 10) {
     return generateTen().substr(0, length);
   }
@@ -10,3 +11,4 @@ var generateTen = function(){
 
 
 console.log(generate(3));
+console.log(generate());
