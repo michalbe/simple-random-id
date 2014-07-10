@@ -1,15 +1,17 @@
 var generate = function(length) {
   length = Math.abs(length) || 10;
-  if (length <= 10) {
-    return generateTen().substr(0, length);
-  } else {
-    var tens = ~~(length/10)+1;
-    var output = '';
+
+  var output = generateTen();
+  if (length === 0) {
+    throw new Error("Random-id needs to be at least 1 character long.");
+  } else if (length > 10) {
+    var tens = ~~(length/10);
     while (tens--) {
       output += generateTen();
     }
-    return output.substr(0, length);
   }
+
+  return output.substr(0, length);
 }
 
 var generateTen = function() {
