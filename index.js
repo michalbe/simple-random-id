@@ -5,7 +5,7 @@ var generate = function(length) {
 
   var output = generateTen();
   if (length === 0) {
-    throw new Error("Random-id needs to be at least 1 character long.");
+    throw new Error("Lenght need to be an integer different than 0.");
   } else if (length > 10) {
     var tens = ~~(length/10);
     while (tens--) {
