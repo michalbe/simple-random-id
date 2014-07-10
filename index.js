@@ -5,9 +5,7 @@ var generate = function(length) {
   } else {
     var tens = ~~(length/10)+1;
     var output = '';
-    console.log(tens);
     while (tens--) {
-      console.log(tens);
       output += generateTen();
     }
     return output.substr(0, length);
