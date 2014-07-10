@@ -5,7 +5,10 @@ var generate = function(length) {
   }
 }
 
-var generateTen = function(){
+var generateTen = function() {
+  // This could be 10 or 11 (depends on the value returned by Math.random())
+  // but since we truncate it in the main function we don't need to do it
+  // in here
   return Math.random().toString(36).slice(2).toUpperCase();
 }
 
