@@ -6,7 +6,7 @@ var generate = function(length) {
 }
 
 var generateTen = function(){
-  return Math.random().toString(36).slice(2).toUpperCase().substr(0, 10);
+  return Math.random().toString(36).slice(2).toUpperCase();
 }
 
 
