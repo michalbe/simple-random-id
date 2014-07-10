@@ -22,9 +22,3 @@ var generateTen = function() {
   // in here
   return Math.random().toString(36).slice(2).toUpperCase();
 }
-
-
-console.log(generate(3));
-console.log(generate());
-console.log(generate(-5));
-console.log(generate(21));
