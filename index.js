@@ -22,3 +22,5 @@ var generateTen = function() {
   // in here
   return Math.random().toString(36).slice(2).toUpperCase();
 }
+
+module.exports = generate;
