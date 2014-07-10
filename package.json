@@ -8,8 +8,13 @@
     "type": "git",
     "url": "git@github.com:michalbe/random-id.git"
   },
+  "scripts": {
+    "lint": "node node_modules/jshint/bin/jshint .",
+    "test": "node tests/random-id_test.js"
+  },
   "devDependencies": {
     "jshint": "~2.5.2",
-    "precommit-hook": "~1.0.2"
+    "precommit-hook": "~1.0.2",
+    "assert": "~1.1.1"
   }
 }
