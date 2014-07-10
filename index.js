@@ -1,5 +1,7 @@
 var generate = function(length) {
-  length = Math.abs(length) || 10;
+  if (length !== 0) {
+    length = Math.abs(length) || 10;
+  }
 
   var output = generateTen();
   if (length === 0) {
