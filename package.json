@@ -1,0 +1,11 @@
+{
+  "author": "Michal Budzynski <michal@virtualdesign.pl> (https://github.com/michalbe)",
+  "name": "random-id",
+  "description": "Random alphanumeric string generator",
+  "version": "1.0",
+  "homepage": "https://github.com/michalbe/random-id",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:michalbe/random-id.git"
+  }
+}
