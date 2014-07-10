@@ -25,3 +25,8 @@ assert.equal(generate({
 // Called with array instead of number
 // Argument should be ignored
 assert.equal(generate([3,2,1,6,7]).length, 10);
+
+// Called with '0' should throw an error
+assert.throws(function(){
+  generate(0)
+});
