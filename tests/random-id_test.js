@@ -28,5 +28,5 @@ assert.equal(generate([3,2,1,6,7]).length, 10);
 
 // Called with '0' should throw an error
 assert.throws(function(){
-  generate(0)
+  generate(0);
 });
